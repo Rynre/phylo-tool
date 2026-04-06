@@ -1,0 +1,30 @@
+IQ-TREE version 3.1.1 for Windows 64-bit built Apr  2 2026
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    Rain (AVX2, FMA3, 15 GB RAM)
+Command: iqtree3 -s C:\Users\nickh\OneDrive\Desktop\phylo-tool\backend\iqtree_runs\3f9f18a5-5f19-4139-aaad-0c3b65c23a4b\matrix.nex -m MK+G
+Seed:    867976 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Mon Apr 06 07:23:41 2026
+Kernel:  AVX+FMA - 1 threads (12 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 12 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file C:\Users\nickh\OneDrive\Desktop\phylo-tool\backend\iqtree_runs\3f9f18a5-5f19-4139-aaad-0c3b65c23a4b\matrix.nex ... Nexus format detected
+Alignment has 6 sequences with 3 columns, 3 distinct patterns
+3 parsimony-informative, 0 singleton sites, 0 constant sites
+         Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 5.86e-005 secs
+   1  Root       0.00%    passed     69.85%
+   2  Taxon_1    0.00%    passed     43.86%
+   3  Taxon_2    0.00%    passed     12.13%
+   4  Taxon_3    0.00%    passed     69.85%
+   5  Taxon_4    0.00%    passed      5.28%
+   6  Taxon_5    0.00%    passed     69.85%
+****  TOTAL      0.00%  0 sequences failed composition chi2 test (p-value<5%; df=1)
+Checking for duplicate sequences: done in 1.74e-005 secs
+Creating fast initial parsimony tree by random order stepwise addition...
+0.001 seconds, parsimony score: 6 (based on 3 sites)
+ERROR: File not found MK

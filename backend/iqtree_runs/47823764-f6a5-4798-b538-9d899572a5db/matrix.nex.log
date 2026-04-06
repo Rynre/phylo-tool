@@ -1,0 +1,148 @@
+IQ-TREE version 3.1.1 for Windows 64-bit built Apr  2 2026
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    Rain (AVX2, FMA3, 15 GB RAM)
+Command: iqtree3 -s C:\Users\nickh\OneDrive\Desktop\phylo-tool\backend\iqtree_runs\47823764-f6a5-4798-b538-9d899572a5db\matrix.nex -m MFP
+Seed:    963492 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Mon Apr 06 06:51:06 2026
+Kernel:  AVX+FMA - 1 threads (12 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 12 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file C:\Users\nickh\OneDrive\Desktop\phylo-tool\backend\iqtree_runs\47823764-f6a5-4798-b538-9d899572a5db\matrix.nex ... Nexus format detected
+Alignment has 6 sequences with 5 columns, 5 distinct patterns
+4 parsimony-informative, 1 singleton sites, 0 constant sites
+         Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 7.58e-005 secs
+   1  Root       0.00%    passed     36.13%
+   2  Taxon_1    0.00%    passed    100.00%
+   3  Taxon_2    0.00%    passed     36.13%
+   4  Taxon_3    0.00%    passed     36.13%
+   5  Taxon_4    0.00%    passed      6.79%
+   6  Taxon_5    0.00%    passed     36.13%
+****  TOTAL      0.00%  0 sequences failed composition chi2 test (p-value<5%; df=1)
+Checking for duplicate sequences: done in 1.82e-005 secs
+
+Creating fast initial parsimony tree by random order stepwise addition...
+0.001 seconds, parsimony score: 7 (based on 5 sites)
+Perform fast likelihood tree search using GTR2+ASC+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -16.949
+Optimal log-likelihood: -16.695
+State frequencies:  0: 0.291  1: 0.709
+Gamma shape alpha: 998.579
+Parameters optimization took 1 rounds (0.000 sec)
+Time for fast ML tree search: 0.002 seconds
+
+NOTE: ModelFinder requires 0 MB RAM!
+ModelFinder will test up to 44 binary models (sample size: 5 epsilon: 0.100) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  GTR2+FO       18.345       10  56.690       276.690      52.784
+  2  GTR2+FO+ASC   16.589       10  53.178       273.178      49.272
+  3  GTR2+FO+G4    18.346       11  58.693       322.693      54.396
+  4  GTR2+FO+ASC+G4 16.589       11  55.178       319.178      50.882
+  5  GTR2+FO+R2    18.346       12  60.691       372.691      56.004
+  6  GTR2+FO+R3    18.345       14  64.689       484.689      59.221
+ 14  GTR2+FO+ASC+R2 16.562       12  57.123       369.123      52.437
+ 15  GTR2+FO+ASC+R3 16.523       14  61.046       481.046      55.578
+ 23  JC2+FQ        18.496       9   54.991       234.991      51.476
+ 24  JC2+FQ+ASC    17.275       9   52.549       232.549      49.034
+ 25  JC2+FQ+G4     18.497       10  56.994       276.994      53.088
+ 26  JC2+FQ+ASC+G4 17.275       10  54.550       274.550      50.644
+ 27  JC2+FQ+R2     18.496       11  58.991       322.991      54.695
+ 28  JC2+FQ+R3     18.496       13  62.991       426.991      57.914
+ 36  JC2+FQ+ASC+R2 17.274       11  56.549       320.549      52.253
+ 37  JC2+FQ+ASC+R3 17.274       13  60.549       424.549      55.471
+Akaike Information Criterion:           JC2+FQ+ASC
+Corrected Akaike Information Criterion: JC2+FQ+ASC
+Bayesian Information Criterion:         JC2+FQ+ASC
+Best-fit model: JC2+FQ+ASC chosen according to BIC
+
+All model information printed to C:\Users\nickh\OneDrive\Desktop\phylo-tool\backend\iqtree_runs\47823764-f6a5-4798-b538-9d899572a5db\matrix.nex.model.gz
+CPU time for ModelFinder: 0.000 seconds (0h:0m:0s)
+Wall-clock time for ModelFinder: 0.025 seconds (0h:0m:0s)
+
+NOTE: 0 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -17.274
+Optimal log-likelihood: -17.274
+State frequencies:  0: 0.500  1: 0.500
+Parameters optimization took 1 rounds (0.000 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 5.01e-005 secs
+Computing ML distances took 0.000121 sec (of wall-clock time) 0.000000 sec (of CPU time)
+WARNING: Some pairwise ML distances are too long (saturated)
+Setting up auxiliary I and S matrices: done in 3.81e-005 secs
+Constructing RapidNJ tree: done in 2.81e-005 secs
+Computing RapidNJ tree took 0.000139 sec (of wall-clock time) 0.000000 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -17.274
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.019 second
+Computing log-likelihood of 21 initial trees ... 0.002 seconds
+Current best score: -17.274
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -17.274
+UPDATE BEST LOG-LIKELIHOOD: -17.274
+Iteration 10 / LogL: -17.274 / Time: 0h:0m:0s
+Iteration 20 / LogL: -17.274 / Time: 0h:0m:0s
+Finish initializing candidate tree set (6)
+Current best tree score: -17.274 / CPU time: 0.033
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -17.274 / Time: 0h:0m:0s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -17.274
+Iteration 40 / LogL: -17.274 / Time: 0h:0m:0s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -17.274
+UPDATE BEST LOG-LIKELIHOOD: -17.274
+Iteration 50 / LogL: -17.274 / Time: 0h:0m:0s (0h:0m:0s left)
+WARNING: NNI search needs unusual large number of steps (6) to converge!
+WARNING: NNI search needs unusual large number of steps (6) to converge!
+Iteration 60 / LogL: -17.274 / Time: 0h:0m:0s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -17.274
+Iteration 70 / LogL: -17.274 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 80 / LogL: -17.274 / Time: 0h:0m:0s (0h:0m:0s left)
+WARNING: NNI search needs unusual large number of steps (6) to converge!
+WARNING: NNI search needs unusual large number of steps (6) to converge!
+Iteration 90 / LogL: -17.274 / Time: 0h:0m:0s (0h:0m:0s left)
+WARNING: NNI search needs unusual large number of steps (6) to converge!
+WARNING: NNI search needs unusual large number of steps (6) to converge!
+Iteration 100 / LogL: -17.274 / Time: 0h:0m:0s (0h:0m:0s left)
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:0m:0s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -17.274
+Optimal log-likelihood: -17.274
+State frequencies:  0: 0.500  1: 0.500
+Parameters optimization took 1 rounds (0.000 sec)
+BEST SCORE FOUND : -17.274
+Total tree length: 1.285
+
+Total number of iterations: 102
+CPU time used for tree search: 0.172 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.088 sec (0h:0m:0s)
+Total CPU time used: 0.188 sec (0h:0m:0s)
+Total wall-clock time used: 0.130 sec (0h:0m:0s)
+
+Analysis results written to: 
+  IQ-TREE report:                C:\Users\nickh\OneDrive\Desktop\phylo-tool\backend\iqtree_runs\47823764-f6a5-4798-b538-9d899572a5db\matrix.nex.iqtree
+  Maximum-likelihood tree:       C:\Users\nickh\OneDrive\Desktop\phylo-tool\backend\iqtree_runs\47823764-f6a5-4798-b538-9d899572a5db\matrix.nex.treefile
+  Likelihood distances:          C:\Users\nickh\OneDrive\Desktop\phylo-tool\backend\iqtree_runs\47823764-f6a5-4798-b538-9d899572a5db\matrix.nex.mldist
+  Screen log file:               C:\Users\nickh\OneDrive\Desktop\phylo-tool\backend\iqtree_runs\47823764-f6a5-4798-b538-9d899572a5db\matrix.nex.log
+
+Date and Time: Mon Apr 06 06:51:07 2026

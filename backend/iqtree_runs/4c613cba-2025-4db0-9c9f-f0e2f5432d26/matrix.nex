@@ -1,0 +1,19 @@
+#NEXUS
+BEGIN TAXA;
+DIMENSIONS NTAX=3;
+TAXLABELS
+  Root
+  Taxon_1
+  Taxon_2
+;
+END;
+
+BEGIN CHARACTERS;
+DIMENSIONS NCHAR=3;
+FORMAT DATATYPE=DNA MISSING=? GAP=-;
+MATRIX
+  Root ACG
+  Taxon_1 GTC
+  Taxon_2 CCT
+;
+END;

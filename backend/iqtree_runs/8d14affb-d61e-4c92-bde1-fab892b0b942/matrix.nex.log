@@ -1,0 +1,18 @@
+IQ-TREE version 3.1.1 for Windows 64-bit built Apr  2 2026
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    Rain (AVX2, FMA3, 15 GB RAM)
+Command: iqtree3 -s C:\Users\nickh\OneDrive\Desktop\phylo-tool\backend\iqtree_runs\8d14affb-d61e-4c92-bde1-fab892b0b942\matrix.nex -m MFP
+Seed:    272043 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Mon Apr 06 05:35:12 2026
+Kernel:  AVX+FMA - 1 threads (12 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 12 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file C:\Users\nickh\OneDrive\Desktop\phylo-tool\backend\iqtree_runs\8d14affb-d61e-4c92-bde1-fab892b0b942\matrix.nex ... Nexus format detected
+ERROR: 
+ERROR: Error found at line 7, column 23 (file position 71):
+ERROR: MORPH is not a valid DATATYPE within a DATA block

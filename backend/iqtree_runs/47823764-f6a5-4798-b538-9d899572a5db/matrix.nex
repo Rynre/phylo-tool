@@ -1,0 +1,25 @@
+#NEXUS
+BEGIN TAXA;
+DIMENSIONS NTAX=6;
+TAXLABELS
+  Root
+  Taxon_1
+  Taxon_2
+  Taxon_3
+  Taxon_4
+  Taxon_5
+;
+END;
+
+BEGIN CHARACTERS;
+DIMENSIONS NCHAR=5;
+FORMAT DATATYPE=STANDARD MISSING=? GAP=- SYMBOLS="01";
+MATRIX
+  Root 01001
+  Taxon_1 10110
+  Taxon_2 00101
+  Taxon_3 10111
+  Taxon_4 11111
+  Taxon_5 00011
+;
+END;

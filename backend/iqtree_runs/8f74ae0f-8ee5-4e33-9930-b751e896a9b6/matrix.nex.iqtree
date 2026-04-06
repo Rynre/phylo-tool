@@ -1,0 +1,163 @@
+IQ-TREE 3.1.1 built Apr  2 2026
+
+Input file name: C:\Users\nickh\OneDrive\Desktop\phylo-tool\backend\iqtree_runs\8f74ae0f-8ee5-4e33-9930-b751e896a9b6\matrix.nex
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 362638
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Since you used ModelFinder please also cite: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+SEQUENCE ALIGNMENT
+------------------
+
+NOTE: Alignment sequence type is auto-detected. If in doubt, specify it via -st option.
+Input data: 3 sequences with 3 binary sites
+Number of constant sites: 0 (= 0% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 0 (= 0% of all sites)
+Number of parsimony informative sites: 0
+Number of distinct site patterns: 3
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: JC2+FQ+ASC
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+JC2+FQ+ASC           -4.682      15.364 +    0.302      39.364 +      0.8      12.660 +    0.183
+JC2+FQ+ASC+G4        -4.144      16.287 +     0.19      56.287 - 0.000169      12.682 +    0.181
+GTR2+FO+ASC          -4.270      16.540 +    0.168      56.540 - 0.000149      12.935 +     0.16
+JC2+FQ+ASC+R2        -4.000      17.999 +   0.0809      77.999 - 3.26e-009      13.492 +    0.121
+GTR2+FO+ASC+G4       -4.272      18.544 +   0.0616      78.544 - 2.48e-009      14.037 +   0.0921
+GTR2+FO+ASC+R2       -4.270      20.541 -   0.0227     104.541 - 5.62e-015      15.132 +   0.0533
+JC2+FQ               -6.068      18.137 +   0.0755      42.137 +      0.2      15.433 -   0.0458
+JC2+FQ+ASC+R3        -3.990      21.980 -   0.0111     133.980 - 2.28e-021      15.670 -   0.0407
+GTR2+FO              -6.001      20.003 -   0.0297      60.003 - 2.64e-005      16.397 -   0.0283
+JC2+FQ+G4            -6.070      20.140 -   0.0277      60.140 - 2.46e-005      16.535 -   0.0264
+GTR2+FO+ASC+R3       -4.221      24.441 -  0.00323     168.441 - 7.49e-029      17.230 -   0.0187
+GTR2+FO+G4           -6.001      22.003 -   0.0109      82.003 - 4.41e-010      17.496 -   0.0163
+JC2+FQ+R2            -6.086      22.172 -     0.01      82.172 - 4.05e-010      17.665 -    0.015
+GTR2+FO+R2           -6.002      24.003 -  0.00402     108.003 - 9.96e-016      18.595 -  0.00943
+JC2+FQ+R3            -6.069      26.137 -  0.00138     138.137 - 2.85e-022      19.827 -  0.00509
+GTR2+FO+R3           -6.002      28.003 - 0.000544     172.003 - 1.26e-029      20.792 -  0.00314
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: JC2+FQ+ASC
+
+Rate parameter R:
+
+  0-1: 1.0000
+
+State frequencies: (equal frequencies)
+
+Rate matrix Q:
+
+  0        -1         1
+  1         1        -1
+
+Model of rate heterogeneity: Uniform
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -3.9970 (s.e. 0.7006)
+Unconstrained log-likelihood (without tree): -3.2958
+Number of free parameters (#branches + #model parameters): 3
+Akaike information criterion (AIC) score: 13.9940
+Corrected Akaike information criterion (AICc) score: 37.9940
+Bayesian information criterion (BIC) score: 11.2898
+
+**************************** WARNING ****************************
+Number of parameters (K, model parameters and branch lengths): 3
+Sample size (n, alignment length): 3
+
+Given that K>=n, the parameter estimates might be inaccurate.
+Thus, phylogenetic estimates should be interpreted with caution.
+
+Ideally, it is desirable that n >> K. When selecting optimal models,
+1. use AIC or BIC if n > 40K;
+2. use AICc or BIC if 40K >= n > K;
+3. be extremely cautious if n <= K
+
+To improve the situation (3), consider the following options:
+  1. Increase the sample size (n)
+  2. Decrease the number of parameters (K) to be estimated. If
+     possible:
+     a. Remove the least important sequences from the alignment
+     b. Specify some of the parameter values for the substitution
+        model (e.g., the nucleotide or amino acid frequencies)
+     c. Specify some of the parameter values for the rates-across-
+        sites model (e.g., the shape parameter for the discrete
+        Gamma distribution, the proportion of invariable sites, or
+        the rates of change for different rate categories under
+        the FreeRate model)
+
+Reference:
+Burnham KR, Anderson DR (2002). Model Selection and Multimodel
+Inference: A Practical Information-Theoretic Approach. Springer,
+New York.
+************************ END OF WARNING ***********************
+
+Total tree length (sum of branch lengths): 0.0004
+Sum of internal branch lengths: 0.0000 (0.0000% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Root' is drawn at root
+
++**Root
+|
++****************************Taxon_1
+|
++***********************************************************Taxon_2
+
+Tree in newick format:
+
+(Root:0.0000010000,Taxon_1:0.0001286249,Taxon_2:0.0002591647);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t C:\Users\nickh\OneDrive\Desktop\phylo-tool\backend\iqtree_runs\8f74ae0f-8ee5-4e33-9930-b751e896a9b6\matrix.nex.treefile -m "JC2+FQ+ASC" --length 3
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s C:\Users\nickh\OneDrive\Desktop\phylo-tool\backend\iqtree_runs\8f74ae0f-8ee5-4e33-9930-b751e896a9b6\matrix.nex --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s C:\Users\nickh\OneDrive\Desktop\phylo-tool\backend\iqtree_runs\8f74ae0f-8ee5-4e33-9930-b751e896a9b6\matrix.nex --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Mon Apr 06 06:55:18 2026
+Total CPU time used: 0.03125 seconds (0h:0m:0s)
+Total wall-clock time used: 0.0503545 seconds (0h:0m:0s)
+
