@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import TreeViewer from "./TreeViewer";
+import TreeViewer from "./matrix/TreeViewer";
 
 export default function MatrixPage() {
   const [taxa, setTaxa] = useState(["Root", "Taxon_1", "Taxon_2"]);
