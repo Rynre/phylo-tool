@@ -165,7 +165,7 @@ export default function MatrixPage() {
     formData.append("datatype", datatype);
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/run-iqtree", {
+      const response = await fetch("https://phylo-tool.onrender.com/run-iqtree", {
         method: "POST",
         body: formData,
       });
